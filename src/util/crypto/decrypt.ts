@@ -26,12 +26,3 @@ const decipher = (target: string) => {
 };
 
 export { decipher, isEncrypted };
-
-if (require.main === module) {
-    (() => {
-        const a = isEncrypted('U2FsdGVkX18=dfd62ebfd0f8e4538ccf0d58bacabb1c:9058201e:fb66e5953b6102ff09a3a5b738f5a6ce');
-        console.log(a);
-        const ab = decipher('U2FsdGVkX18=dfd62ebfd0f8e4538ccf0d58bacabb1c:9058201e:fb66e5953b6102ff09a3a5b738f5a6ce');
-        console.log(ab);
-    })();
-}

@@ -31,7 +31,7 @@ NestJS BoilerPlate with
 ```bash
 src
 ├───apis
-│   └───coupon
+│   └───user
 │       ├───adaptor
 │       │   ├───in                    # Controller
 │       │   └───out                   # Infrastructure (Impl of out port)
@@ -53,18 +53,9 @@ src
 │
 ├───infra                             # External Library
 │   ├───error                         # Base error of infrastructure Layer
-│   ├───message
-│   │   └───bizppurio
-│   ├───otp
-│   │   ├───google
-│   │   └───naver
-│   ├───providers
-│   │   └───secta-nine
 │   ├───redis
-│   ├───s3
 │   └───typeorm
 │       └───entities
-│           └───types
 │
 └───util                              # Utility Function (function only)
     ├───crypto
